@@ -6,7 +6,6 @@
                   [refactor-nrepl "0.2.2"]
                   [lein-ancient "0.6.1"]
                   [jonase/eastwood "0.2.1"]
-                  [lein-kibit "0.0.8"]
                   [venantius/ultra "0.2.0"]]
         :ultra {:color-scheme :solarized_dark}
         :injections [(use 'clojure.repl)
