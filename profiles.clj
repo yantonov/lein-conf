@@ -7,7 +7,8 @@
                   [refactor-nrepl "1.2.0"]
                   [lein-ancient "0.6.8"]
                   [jonase/eastwood "0.2.2"]
-                  [venantius/ultra "0.4.0"]]
+                  ;[venantius/ultra "0.4.0"]
+                  ]
         :ultra {:color-scheme :solarized_dark}
         :injections [(use 'clojure.repl)
                      (use 'clojure.java.javadoc)
