@@ -8,7 +8,6 @@
   :ultra {:color-scheme :solarized_dark}
   :injections [(use 'clojure.repl)
                (use 'clojure.java.javadoc)
-               (require 'alembic.still)
                (require 'pjstadig.humane-test-output)
                (pjstadig.humane-test-output/activate!)]}
  :repl
