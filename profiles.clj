@@ -14,7 +14,7 @@
  {:dependencies [[alembic "0.3.2"]
                  [org.clojure/tools.nrepl "0.2.12"]]
   :plugins [[refactor-nrepl "2.0.0-SNAPSHOT"]
-            [cider/cider-nrepl "0.10.1"]]
+            [cider/cider-nrepl "0.10.2"]]
   :injections [(use 'clojure.repl)
                (use 'clojure.java.javadoc)
                (require 'alembic.still)]}}
