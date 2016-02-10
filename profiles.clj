@@ -2,8 +2,7 @@
  {:dependencies [[pjstadig/humane-test-output "0.7.0"]]
   :plugins [[lein-cljfmt "0.3.0"]
             [lein-kibit "0.1.2"]
-            [lein-ancient "0.6.7"]
-            [jonase/eastwood "0.2.1"]
+            [lein-ancient "0.6.8"]
             [venantius/ultra "0.3.4"]]
   :ultra {:color-scheme :solarized_dark}
   :injections [(use 'clojure.repl)
