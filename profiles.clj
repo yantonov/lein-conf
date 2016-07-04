@@ -1,6 +1,6 @@
 {:user
  {:dependencies [[pjstadig/humane-test-output "0.8.0"]]
-  :plugins [[lein-cljfmt "0.5.1"]
+  :plugins [[lein-cljfmt "0.5.3"]
             [lein-ancient "0.6.10"]
             [venantius/ultra "0.4.1"]
             ;; linters
