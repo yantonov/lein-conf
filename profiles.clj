@@ -1,11 +1,10 @@
 {:user
  {:dependencies [[pjstadig/humane-test-output "0.8.1"]]
-  :plugins [[lein-cljfmt "0.5.6"]
-            [lein-ancient "0.6.10"]
-            [venantius/ultra "0.5.0"]
-            ;; linters
-            [lein-kibit "0.1.3"]
-            [jonase/eastwood "0.2.3"]
+  :plugins [[lein-cljfmt "0.5.6"] ; reformat
+            [lein-ancient "0.6.10"] ; check out-of-date artifact
+            [venantius/ultra "0.5.0"] ; pretty print test output, stacktraces
+            [lein-kibit "0.1.3"] ; lint
+            [jonase/eastwood "0.2.3"] ; lint
             [venantius/yagni "0.1.4"]
             [lein-bikeshed "0.4.1"]]
   :injections [(use 'clojure.repl)
