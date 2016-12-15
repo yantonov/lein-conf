@@ -5,8 +5,8 @@
             [venantius/ultra "0.5.0"] ; pretty print test output, stacktraces
             [lein-kibit "0.1.3"] ; lint
             [jonase/eastwood "0.2.3"] ; lint
-            [venantius/yagni "0.1.4"]
-            [lein-bikeshed "0.4.1"]]
+            [venantius/yagni "0.1.4"] ; check dead code
+            [lein-bikeshed "0.4.1"]] ; another lint tool
   :injections [(use 'clojure.repl)
                (use 'clojure.java.javadoc)
                (require 'pjstadig.humane-test-output)
