@@ -11,7 +11,7 @@
  :repl
  {:dependencies [[org.clojure/tools.namespace "0.2.11"] ; reload ns
                  [alembic "0.3.2"]
-                 [org.clojure/tools.nrepl "0.2.12"]
+                 [org.clojure/tools.nrepl "0.2.13"]
                  ]
   :plugins [[refactor-nrepl "2.3.0"]
             [cider/cider-nrepl "0.14.0"]]
