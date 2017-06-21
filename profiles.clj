@@ -6,6 +6,7 @@
             [jonase/eastwood "0.2.3"] ; lint
             [venantius/yagni "0.1.4"] ; check dead code
             [lein-bikeshed "0.4.1"] ; another lint tool
+            [lein-auto "0.1.3"] ; watches the project source directories, and executes a task when it detects changes to files matching a set pattern
             ]
   }
  :repl
