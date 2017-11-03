@@ -8,7 +8,7 @@ if [ "$1" = "upgrade" ]; then
 fi
 
 if [ "$1" = "upgrade-clojure" ]; then
-    lein ancient :upgrade :check-clojure :interactive
+    lein ancient upgrade :check-clojure :interactive
     exit 0
 fi
 
