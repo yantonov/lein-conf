@@ -1,7 +1,7 @@
 {:user
  {:plugins [[lein-cljfmt "0.5.7"] ; reformat
             [lein-ancient "0.6.14"] ; check out-of-date artifact
-            [venantius/ultra "0.5.1"] ; pretty print test output, stacktraces
+            [venantius/ultra "0.5.2"] ; pretty print test output, stacktraces
             [lein-kibit "0.1.5"] ; lint
             [jonase/eastwood "0.2.5"] ; lint
             [venantius/yagni "0.1.4"] ; check dead code
