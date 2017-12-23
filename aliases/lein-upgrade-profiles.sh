@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd $HOME
+cd "${HOME}"
 lein ancient upgrade-profiles

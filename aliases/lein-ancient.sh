@@ -1,6 +1,6 @@
 #!/bin/sh
 
-SCRIPT_NAME=`basename $0`
+SCRIPT="$(basename "$0")"
 
 if [ "$1" = "upgrade" ]; then
     lein ancient upgrade :interactive
@@ -14,6 +14,6 @@ fi
 
 lein ancient
 if [[ ($? -ne 0) || (`uname` -eq "Darwin") ]]; then
-    echo "if you want to apply changes, use: $SCRIPT_NAME upgrade"
-    echo "to upgrade clojure  use: $SCRIPT_NAME upgrade-clojure"
+    echo "if you want to apply changes, use: ${SCRIPT} upgrade"
+    echo "to upgrade clojure  use: ${SCRIPT} upgrade-clojure"
 fi
