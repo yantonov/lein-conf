@@ -3,34 +3,34 @@
 # 1. backup current settings settings
 # 2. use settings from git repo
 
-SCRIPT_DIR=$(cd `dirname $0` && pwd)
-GIT_REPO_DIR="$SCRIPT_DIR/.."
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+GIT_REPO_DIR="${SCRIPT_DIR}/.."
 
-TIME=`date "+%Y-%m-%d_%H-%M-%S"`
+TIME=$(date "+%Y-%m-%d_%H-%M-%S")
 
 FILENAME="profiles.clj"
 
-TARGET_DIR="$HOME/.lein"
+TARGET_DIR="${HOME}/.lein"
 
 function use {
     # backup
-    if [ -f "$TARGET_DIR/$FILENAME" ]; then
-        cp $TARGET_DIR/$FILENAME $TARGET_DIR/$FILENAME.bak_$TIME
+    if [ -f "${TARGET_DIR}/${FILENAME}" ]; then
+        cp "${TARGET_DIR}/${FILENAME}" "${TARGET_DIR}/${FILENAME}.bak_${TIME}"
     fi
     # use settings from git repo
-    cp $GIT_REPO_DIR/$FILENAME $TARGET_DIR/$FILENAME
+    cp "${GIT_REPO_DIR}/${FILENAME}" "${TARGET_DIR}/${FILENAME}"
 }
 
 function save {
-    cp $TARGET_DIR/$FILENAME $GIT_REPO_DIR/$FILENAME
+    cp "${TARGET_DIR}/${FILENAME}" "${GIT_REPO_DIR}/${FILENAME}"
 }
 
 function remove_backup {
-    rm -i $TARGET_DIR/$FILENAME.bak*
+    rm -i "${TARGET_DIR}/${FILENAME}.bak"*
 }
 
-CMD=$1
-case $CMD in
+CMD="$1"
+case "${CMD}" in
     use)
         use
         ;;
