@@ -1,7 +1,6 @@
 {:user
  {:plugins [[lein-cljfmt "0.6.4"] ; reformat
             [lein-ancient "0.6.15"] ; check out-of-date artifact
-            [venantius/ultra "0.6.0"] ; pretty print test output, stacktraces
             [lein-kibit "0.1.7"] ; lint
             [jonase/eastwood "0.3.6"] ; lint
             [venantius/yagni "0.1.7"] ; check dead code
@@ -11,14 +10,13 @@
   }
  :repl
  {:dependencies [[org.clojure/tools.namespace "0.3.1"] ; reload ns
-                 [alembic "0.3.2"]
                  [org.clojure/tools.nrepl "0.2.13"]
                  ]
-  :plugins [[refactor-nrepl "2.4.0"]
+  :plugins [
+            [refactor-nrepl "2.4.0"]
             [cider/cider-nrepl "0.21.1"]]
   :injections [(require '[clojure.tools.namespace.repl :refer [refresh]])
                (refresh)
-               (require 'alembic.still)
                (use 'clojure.repl)
                (use 'clojure.java.javadoc)]
   }}
