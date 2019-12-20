@@ -1,7 +1,7 @@
 {:user
- {:plugins [[lein-cljfmt "0.6.4"] ; reformat
+ {:plugins [[lein-cljfmt "0.6.6"] ; reformat
             [lein-ancient "0.6.15"] ; check out-of-date artifact
-            [lein-kibit "0.1.7"] ; lint
+            [lein-kibit "0.1.8"] ; lint
             [jonase/eastwood "0.3.6"] ; lint
             [venantius/yagni "0.1.7"] ; check dead code
             [lein-bikeshed "0.5.2"] ; another lint tool
@@ -14,7 +14,7 @@
                  ]
   :plugins [
             [refactor-nrepl "2.4.0"]
-            [cider/cider-nrepl "0.21.1"]]
+            [cider/cider-nrepl "0.22.4"]]
   :injections [(require '[clojure.tools.namespace.repl :refer [refresh]])
                (refresh)
                (use 'clojure.repl)
