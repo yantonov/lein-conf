@@ -1,5 +1,6 @@
 {:user
- {:plugins [[lein-cljfmt "0.6.6"] ; reformat
+ {
+  :plugins [[lein-cljfmt "0.6.6"] ; reformat
             [lein-ancient "0.6.15"] ; check out-of-date artifact
             [lein-kibit "0.1.8"] ; lint
             [jonase/eastwood "0.3.6"] ; lint
@@ -7,16 +8,22 @@
             [lein-bikeshed "0.5.2"] ; another lint tool
             [lein-auto "0.1.3"] ; watches the project source directories, and executes a task when it detects changes to files matching a set pattern
             ]
+  :dependencies [[hashp "0.1.0"]] ; https://github.com/weavejester/hashp
+  :injections [(require 'hashp.core)]
   }
  :repl
- {:dependencies [[org.clojure/tools.namespace "0.3.1"] ; reload ns
-                 [org.clojure/tools.nrepl "0.2.13"]
-                 ]
-  :plugins [
-            [refactor-nrepl "2.4.0"]
-            [cider/cider-nrepl "0.22.4"]]
-  :injections [(require '[clojure.tools.namespace.repl :refer [refresh]])
-               (refresh)
-               (use 'clojure.repl)
-               (use 'clojure.java.javadoc)]
-  }}
+ {
+  :user
+  {
+   :dependencies [[org.clojure/tools.namespace "0.3.1"] ; reload ns
+                  [org.clojure/tools.nrepl "0.2.13"]]
+   :plugins [[refactor-nrepl "2.4.0"]
+             [cider/cider-nrepl "0.22.4"]]
+   :injections [(require '[clojure.tools.namespace.repl :refer [refresh]])
+                (refresh)
+                (use 'clojure.repl)
+                (use 'clojure.java.javadoc)
+                (require 'hashp.core)]
+   }
+  }
+ }
