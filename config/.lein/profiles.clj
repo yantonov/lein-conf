@@ -1,6 +1,6 @@
 {:user
  {
-  :plugins [[lein-cljfmt "0.6.8"] ; reformat
+  :plugins [[lein-cljfmt "0.7.0"] ; reformat
             [lein-ancient "0.6.15"] ; check out-of-date artifact
             [lein-kibit "0.1.8"] ; lint
             [jonase/eastwood "0.3.11"] ; lint
