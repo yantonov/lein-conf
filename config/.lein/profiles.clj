@@ -3,7 +3,7 @@
   :plugins [[lein-cljfmt "0.8.0"] ; reformat
             [lein-ancient "0.7.0"] ; check out-of-date artifact
             [lein-kibit "0.1.8"] ; lint
-            [jonase/eastwood "1.0.0"] ; lint
+            [jonase/eastwood "1.2.3"] ; lint
             [venantius/yagni "0.1.7"] ; check dead code
             [lein-bikeshed "0.5.2"] ; another lint tool
             [lein-auto "0.1.3"] ; watches the project source directories, and executes a task when it detects changes to files matching a set pattern
