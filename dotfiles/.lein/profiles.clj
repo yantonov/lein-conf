@@ -11,19 +11,4 @@
   :dependencies [[hashp "0.2.2"]] ; https://github.com/weavejester/hashp
   :injections [(require 'hashp.core)]
   }
- :repl
- {
-  :user
-  {
-   :dependencies [[org.clojure/tools.namespace "0.3.1"] ; reload ns
-                  [org.clojure/tools.nrepl "0.2.13"]]
-   :plugins [[refactor-nrepl "2.4.0"]
-             [cider/cider-nrepl "0.22.4"]]
-   :injections [(require '[clojure.tools.namespace.repl :refer [refresh]])
-                (refresh)
-                (use 'clojure.repl)
-                (use 'clojure.java.javadoc)
-                (require 'hashp.core)]
-   }
-  }
  }
