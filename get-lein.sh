@@ -1,6 +1,6 @@
 #!/bin/sh
 
-INSTALL_DIR="${HOME}/Development/bin/lein"
+INSTALL_DIR="${HOME}/bin/lein"
 LEIN_DIST_URL="https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein"
 TARGET_FILENAME="lein"
 
